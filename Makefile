@@ -14,3 +14,7 @@ release: deploy
 
 deploy: clean container_production_push
 	@echo "<===|DEVOPS|===> [DEPLOY] Deploying service container version ${tag_version}"
+
+container_production_build:
+	@echo "<===|DEVOPS|===> [BUILD] Production container $(container_name):$(tag_version)"
+	@docker build -t $(container_name):$(tag_version) -t $(container_name):latest .
