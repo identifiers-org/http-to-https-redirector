@@ -26,3 +26,5 @@ container_production_push: container_production_build
 
 clean:
 	@echo "<===|DEVOPS|===> [CLEAN] Cleaning the space"
+
+.PHONY: all clean container_production_build container_production_push deploy release
