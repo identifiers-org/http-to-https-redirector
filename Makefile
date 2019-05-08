@@ -4,3 +4,7 @@
 # Environment
 container_name = identifiersorg/http-to-https-redirector
 tag_version = $(shell cat VERSION)
+
+# Default target
+all:
+	@echo "<===|DEVOPS|===> [WARNING] There is no 'default target'"
