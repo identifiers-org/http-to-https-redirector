@@ -8,3 +8,6 @@ tag_version = $(shell cat VERSION)
 # Default target
 all:
 	@echo "<===|DEVOPS|===> [WARNING] There is no 'default target'"
+
+release: deploy
+	@echo "<===|DEVOPS|===> [RELEASE] New Software Release"
