@@ -11,3 +11,6 @@ all:
 
 release: deploy
 	@echo "<===|DEVOPS|===> [RELEASE] New Software Release"
+
+deploy: clean container_production_push
+	@echo "<===|DEVOPS|===> [DEPLOY] Deploying service container version ${tag_version}"
